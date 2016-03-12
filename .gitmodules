@@ -1,0 +1,3 @@
+[submodule "src/swtlib"]
+	path = src/swtlib
+	url = https://github.com/tstempfle/swtlib.git
