@@ -303,7 +303,7 @@ public class SwissMateMain {
 				break;
 			}
 			
-			tabbedPane.add("R" + (roundIndex + 1), new RoundTable(round, roundIndex));			
+			tabbedPane.add("R" + (roundIndex + 1), new RoundTable(tournament, roundIndex));			
 			roundIndex++;
 			
 		}
@@ -476,7 +476,7 @@ public class SwissMateMain {
 		
 		openTournament.updatePairings(newRound, pairings);
 		
-		tabbedPane.add("R" + (newRound + 1),  new RoundTable(openTournament.getRounds().get(newRound), newRound));
+		tabbedPane.add("R" + (newRound + 1),  new RoundTable(openTournament,  newRound));
 		tabbedPane.setSelectedIndex(newRound + 1);
 		
 		nextRoundButton.setEnabled(tabbedPane.getTabCount() - 1 < openTournament.getRounds().size());
